@@ -1,11 +1,36 @@
+@font-face {
+    font-family: 'latoboldbold';
+    src: url('../fonts/latobold-bold-webfont.woff2') format('woff2'),
+         url('../fonts/latobold-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
+
+@font-face {
+    font-family: 'latoboldregular';
+    src: url('../fonts/latobold-regular-webfont.woff2') format('woff2'),
+         url('../fonts/latobold-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'playfair_displayitalic';
+    src: url('../fonts/playfairdisplay-italic-webfont.woff2') format('woff2'),
+         url('../fonts/playfairdisplay-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 body {
 	margin: 0;
 	padding: 0;
 }
 
 p {
-	font-family: "Lato Regular", Roboto , sans-serif;
+	font-family: "latoboldregular", Roboto , sans-serif;
 	font-size: 14px;
 	color: #393939;
 	margin: 0;
@@ -74,8 +99,7 @@ button {
 
 /* Header Logo */
 .head-nav-link {
-	font-family: "Playfair Display", serif;
-	font-style: italic;
+	font-family: "playfair_displayitalic", serif;
 	font-size: 18px;
 	margin-right: 25px;
 }
@@ -118,32 +142,19 @@ button {
 	margin-right: 1.8em;
 }
 
-.network1 {
-	display: block;
-	background: url(../img/soc1.png) no-repeat center;
-	width: 34px;
-	height: 34px;
+.fa-circle,
+.fa-facebook-f,
+.fa-twitter,
+.fa-pinterest,
+.fa-instagram {
+	color: #DAC090;
 }
 
-.network2 {
-	display: block;
-	background: url(../img/soc2.png) no-repeat center;
-	width: 34px;
-	height: 34px;
-}
-
-.network3 {
-	display: block;
-	background: url(../img/soc3.png) no-repeat center;
-	width: 34px;
-	height: 34px;
-}
-
-.network4 {
-	display: block;
-	background: url(../img/soc4.png) no-repeat center;
-	width: 34px;
-	height: 34px;
+.fa-facebook-f:hover,
+.fa-twitter:hover,
+.fa-pinterest:hover,
+.fa-instagram:hover {
+	color: #B3B4B3;
 }
 
 .cash {
@@ -195,7 +206,7 @@ button {
 }
 
 .center-text {
-	font-family: Lato, sans-serif;
+	font-family: latobold, sans-serif;
 	font-size: 20px;
 	font-weight: bold;
 	color: #fff;
@@ -204,7 +215,7 @@ button {
 }
 
 .center-text-big {
-	font-family: Lato, sans-serif;
+	font-family: latobold, sans-serif;
 	font-size: 59px;
 	font-weight: bold;
 	color: #000;
@@ -228,7 +239,7 @@ button {
 }
 
 .orange-button {
-	font-family: Lato, sans-serif;
+	font-family: latobold, sans-serif;
 	font-size: 24px;
 	font-weight: bold;
 	color: #fff;
@@ -361,10 +372,9 @@ button {
 }
 
 h2 {
-	font-family: "Playfair Display", Roboto , sans-serif;
+	font-family: "playfair_displayitalic", Roboto , sans-serif;
 	font-size: 30px;
 	color: #393939;
-	font-style: italic;
 	text-transform: capitalize;
 	margin: 0 0px;
 }
@@ -619,11 +629,10 @@ h2 {
 }
 
 .customer-text {
-	font-family: "Playfair Display", Roboto , sans-serif;
+	font-family: "playfair_displayitalic", Roboto , sans-serif;
 	font-size: 18px;
 	line-height: 30px;
 	color: #fff;
-	font-style: italic;
 	text-transform: capitalize;
 	margin: 90px 0 50px 0;
 }
@@ -721,6 +730,20 @@ h3 {
 	margin-right: 20px;
 }
 
+.footer-circle {
+	color: #fff;
+}
+
+.footer-icon {
+	color: #000;
+}
+
+.footer-social:hover {
+	font-size: 5em;
+	background-color: red;
+}
+
+
 .footer-network1 {
 	display: block;
 	background: url(../img/icon.png) no-repeat center;
@@ -747,10 +770,6 @@ h3 {
 	background: url(../img/icon4.png) no-repeat center;
 	width: 50px;
 	height: 50px;
-}
-
-.footer-network4:hover {
-	background: url(../img/icon4-2.png) no-repeat center;
 }
 
 .footer-network5 {
